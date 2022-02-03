@@ -90,10 +90,9 @@ export const Empty = styled("div")`
 export const FooterContainer = styled("div")`
   max-width: 510px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: flex; 
   text-align: center;
-  align-items: center;
+  align-items: right;
   transition: all 0.1s ease-in-out;
 
   a {

@@ -20,11 +20,13 @@ export const useForm = (validate: any) => {
     // Your url for API
     const url = "";
     if (Object.keys(values).length === 3) {
+      alert('Your response has been submitted. Thanks for reaching out to us.')
       axios
         .post(url, {
           ...values,
         })
         .then(() => {
+          setValues("");
           setShouldSubmit(true);
         });
     }

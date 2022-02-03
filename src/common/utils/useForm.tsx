@@ -26,7 +26,6 @@ export const useForm = (validate: any) => {
           ...values,
         })
         .then(() => {
-          setValues("");
           setShouldSubmit(true);
         });
     }

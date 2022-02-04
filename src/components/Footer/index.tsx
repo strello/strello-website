@@ -6,19 +6,9 @@ import Container from '../../common/Container'
 import i18n from 'i18next'
 import {
   FooterSection,
-  Title,
-  NavLink,
-  Extra,
-  LogoContainer,
   Para,
-  Large,
-  Chat,
   Empty,
-  FooterContainer,
   Language,
-  Label,
-  LanguageSwitch,
-  LanguageSwitchContainer,
 } from './styles'
 
 interface SocialLinkProps {
@@ -53,7 +43,7 @@ const Footer = ({ t }: any) => {
             <Col lg={10} md={10} sm={12} xs={12}>
               <Empty />
               <Language>{t('Address')}</Language>
-              <Para>IOT Lab</Para>
+              <Para>IoT Lab</Para>
               <Para>TIDES Office Building</Para>
               <Para>IIT Roorkee</Para>
               <Para>Roorkee Uttarakhand</Para>

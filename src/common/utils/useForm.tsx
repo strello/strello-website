@@ -2,23 +2,12 @@ import { useState, useEffect } from "react";
 import { notification } from "antd";
 import axios from "axios";
 
-const formatContactData = ({ name, email, message }: any): any => {
-    const data = {
-        attachments: [
-            {
-                color: "#2eb886",
-                "author_name": name,
-                "title": email,
-                "title_link": `mailto:${email}`,
-                "text": message
-            }
-        ]
-    }
-    return data
-}
-
 export const useForm = (validate: any) => {
-    const [values, setValues] = useState({});
+    const [values, setValues] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
     const [errors, setErrors] = useState({});
     const [shouldSubmit, setShouldSubmit] = useState(false);
 
@@ -33,18 +22,21 @@ export const useForm = (validate: any) => {
         event.preventDefault();
         setErrors(validate(values));
 
-        const webhookURL = "https://hooks.slack.com/services/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";
-
-        const formattedData = formatContactData(values);
-        console.log(formattedData);
+        const webhookURL = "https://api.strello.co/api/user/contact-us";
 
         if (Object.keys(values).length === 3) {
-            axios.post(webhookURL, JSON.stringify(formattedData), {
-                withCredentials: false,
-                transformRequest: [(data, headers) => {
-                    delete headers['Content-Type']
-                    return data
-                }]
+            axios.post(webhookURL, {
+                attachments: [
+                    {
+                        color: "#2eb886",
+                        author_name: values.name,
+                        title: values.email,
+                        title_link: `mailto:${values.email}`,
+                        text: values.message
+                    }
+                ]
+            }, {
+                withCredentials: false
             }).then(() => {
                 setShouldSubmit(true);
             });
@@ -53,7 +45,11 @@ export const useForm = (validate: any) => {
 
     useEffect(() => {
         if (Object.keys(errors).length === 0 && shouldSubmit) {
-            setValues("");
+            setValues({
+                name: '',
+                email: '',
+                message: ''
+            });
             openNotificationWithIcon();
         }
     }, [errors, shouldSubmit]);

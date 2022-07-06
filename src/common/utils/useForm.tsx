@@ -2,55 +2,75 @@ import { useState, useEffect } from "react";
 import { notification } from "antd";
 import axios from "axios";
 
+const formatContactData = ({ name, email, message }: any): any => {
+    const data = {
+        attachments: [
+            {
+                color: "#2eb886",
+                "author_name": name,
+                "title": email,
+                "title_link": `mailto:${email}`,
+                "text": message
+            }
+        ]
+    }
+    return data
+}
+
 export const useForm = (validate: any) => {
-  const [values, setValues] = useState({});
-  const [errors, setErrors] = useState({});
-  const [shouldSubmit, setShouldSubmit] = useState(false);
+    const [values, setValues] = useState({});
+    const [errors, setErrors] = useState({});
+    const [shouldSubmit, setShouldSubmit] = useState(false);
 
-  const openNotificationWithIcon = () => {
-    notification["success"]({
-      message: "Success",
-      description: "Your message has been sent!",
-    });
-  };
-
-  const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setErrors(validate(values));
-    // Your url for API
-    const url = "";
-    if (Object.keys(values).length === 3) {
-      alert('Your response has been submitted. Thanks for reaching out to us.')
-      axios
-        .post(url, {
-          ...values,
-        })
-        .then(() => {
-          setShouldSubmit(true);
+    const openNotificationWithIcon = () => {
+        notification["success"]({
+            message: "Success",
+            description: "Your message has been sent!",
         });
-    }
-  };
+    };
 
-  useEffect(() => {
-    if (Object.keys(errors).length === 0 && shouldSubmit) {
-      setValues("");
-      openNotificationWithIcon();
-    }
-  }, [errors, shouldSubmit]);
+    const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        setErrors(validate(values));
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    event.persist();
-    setValues((values) => ({
-      ...values,
-      [event.target.name]: event.target.value,
-    }));
-    setErrors((errors) => ({ ...errors, [event.target.name]: "" }));
-  };
+        const webhookURL = "https://hooks.slack.com/services/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";
 
-  return {
-    handleChange,
-    handleSubmit,
-    values,
-    errors,
-  };
+        const formattedData = formatContactData(values);
+        console.log(formattedData);
+
+        if (Object.keys(values).length === 3) {
+            axios.post(webhookURL, JSON.stringify(formattedData), {
+                withCredentials: false,
+                transformRequest: [(data, headers) => {
+                    delete headers['Content-Type']
+                    return data
+                }]
+            }).then(() => {
+                setShouldSubmit(true);
+            });
+        }
+    };
+
+    useEffect(() => {
+        if (Object.keys(errors).length === 0 && shouldSubmit) {
+            setValues("");
+            openNotificationWithIcon();
+        }
+    }, [errors, shouldSubmit]);
+
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        event.persist();
+        setValues((values) => ({
+            ...values,
+            [event.target.name]: event.target.value,
+        }));
+        setErrors((errors) => ({ ...errors, [event.target.name]: "" }));
+    };
+
+    return {
+        handleChange,
+        handleSubmit,
+        values,
+        errors,
+    };
 };

@@ -33,7 +33,7 @@ export const useForm = (validate: any) => {
         event.preventDefault();
         setErrors(validate(values));
 
-        const webhookURL = "https://hooks.slack.com/services/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";
+        const webhookURL = "https://hooks.slack.com/services/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";
 
         const formattedData = formatContactData(values);
         console.log(formattedData);

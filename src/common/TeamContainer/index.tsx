@@ -1,6 +1,5 @@
 import { TeamMemberProps } from "../types";
 import "./styles.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const TeamMember = ({
     img,
@@ -14,7 +13,7 @@ export const TeamMember = ({
         <div className="member-name">
             <p>{name}</p>
         </div>
-        <div className="links-container">
+        <div className="links_container">
             <button className="btn">
                 <a href={twitter} target="_blank"><img className="social-image" src="img/svg/twitter1.svg" /></a>
             </button>

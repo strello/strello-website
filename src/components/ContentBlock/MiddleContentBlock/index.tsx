@@ -6,7 +6,6 @@ import {
   ContentWrapper,
   HeadDiv,
   MiddleBlockContainer,
-  ButtonWrapper,
   Heading
 } from "./styles";
 import { TeamMember } from "../../../common/TeamContainer";

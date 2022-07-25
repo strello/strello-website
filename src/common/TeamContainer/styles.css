@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-right: 8vw;
+    margin-bottom: 20px;
+}
+
+.member-image{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: #d6d6d6;
+    box-shadow: 2px 2px 4px #b6a9a9, -2px -2px 4px #ffffff;
+    margin: 20px 0;
+}
+
+.member-name{
+    text-align: center;
+    vertical-align: center;
+    font-weight: bold;
+}
+
+.links-row{
+    display: flex;
+    margin: 10px;
+    width: 100%;
+}
+
+//Links
+  
+  .links-container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    text-align: center;
+  }
+  
+  .social-image{
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 2px;
+    margin-top: 1px;
+  }
+  
+  .btn {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    outline: none;
+    border: none;
+    padding: 2px;
+    background: #d6d6d6;
+    box-shadow: 2px 2px 4px #b6a9a9, -2px -2px 4px #ffffff;
+    border-radius: 50%;
+    transition: 0.2;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.21);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  

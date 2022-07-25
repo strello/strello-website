@@ -35,3 +35,11 @@ export interface validateProps {
   message: string;
   email: string;
 }
+
+export interface TeamMemberProps {
+  img: string,
+  name: string,
+  linkedin : string,
+  twitter: string,
+  instagram: string
+}

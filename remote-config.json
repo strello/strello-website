@@ -1,0 +1,27 @@
+{
+    "whitelisted_url_patterns" : [
+        "{*.}?codeforces.com",
+        "{*.}?codechef.com",
+        "{*.}?channeli.in"
+    ],
+    "sharemsg_txt": {
+        "twitter": {
+            "url": "https://strello.co",
+            "title": "Strello"
+        },
+        "linkedin": {
+            "url": "https://strello.co",
+            "title": "Strello",
+            "summary": "insert linkedin summary here"
+        },
+        "whatsapp": {
+            "url": "https://strello.co",
+            "title": "Strello"
+        },
+        "facebook": {
+            "url": "https://strello.co",
+            "quote": "gbffvdbg",
+            "hashtag": "#strello"
+        }
+    }
+}

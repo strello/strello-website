@@ -2,7 +2,8 @@
     "whitelisted_url_patterns" : [
         "{*.}?codeforces.com",
         "{*.}?codechef.com",
-        "{*.}?channeli.in"
+        "{*.}?channeli.in",
+	"{*.}?youtube.com"
     ],
     "sharemsg_txt": {
         "twitter": {

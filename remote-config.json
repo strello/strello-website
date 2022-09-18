@@ -3,8 +3,11 @@
         "{*.}?codeforces.com",
         "{*.}?codechef.com",
         "{*.}?channeli.in",
-	"{*.}?youtube.com",
-	"{*.}?upgrad.com"
+	    "{*.}?youtube.com",
+	    "{*.}?upgrad.com",
+	    "{*.}?amazon.in",
+	    "{*.}?flipkart.com",
+	    "{*.}?skribbl.io"
     ],
     "sharemsg_txt": {
         "twitter": {

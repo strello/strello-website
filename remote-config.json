@@ -1,33 +1,132 @@
 {
-    "whitelisted_url_patterns" : [
-        "{*.}?codeforces.com",
-        "{*.}?codechef.com",
-        "{*.}?channeli.in",
-	    "{*.}?youtube.com",
-	    "{*.}?upgrad.com",
-	    "{*.}?amazon.in",
-	    "{*.}?flipkart.com",
-	    "{*.}?skribbl.io",
-	    "{*.}?strello.co"
-    ],
-    "sharemsg_txt": {
-        "twitter": {
-            "url": "https://strello.co",
-            "title": "Strello"
-        },
-        "linkedin": {
-            "url": "https://strello.co",
-            "title": "Strello",
-            "summary": "insert linkedin summary here"
-        },
-        "whatsapp": {
-            "url": "https://strello.co",
-            "title": "Strello"
-        },
-        "facebook": {
-            "url": "https://strello.co",
-            "quote": "gbffvdbg",
-            "hashtag": "#strello"
-        }
+  "whitelisted_url_patterns": [
+    "{*.}?codeforces.com",
+    "{*.}?codechef.com",
+    "{*.}?cp-algorithms.com",
+    "{*.}?cses.fi",
+    "{*.}?interviewbit.com",
+    "{*.}?codejudge.io",
+    "{*.}?spoj.com",
+    "{*.}?coderbyte.com",
+    "{*.}?topcoder.com",
+    "{*.}?hackerrank.com",
+    "{*.}?hackerearth.com",
+    "{*.}?tutorialspoint.com",
+    "{*.}?codingninjas.com",
+    "{*.}?codingblocks.com",
+    "{*.}?scaler.com",
+    "{*.}?javatpoint.com",
+    "{*.}?leetcode.com",
+    "{*.}?geeksforgeeks.org",
+
+    "{*.}?colab.research.google.com",
+    "{*.}?arxiv.org",
+    "{*.}?kaggle.com",
+
+    "{*.}?linkedin.com",
+
+    "{*.}?devfolio.co",
+    "{*.}?dev.to",
+    "{*.}?github.com",
+    "{*.}?w3schools.com",
+    "{*.}?ycombinator.com",
+    "{*.}?techcrunch.com",
+    "{*.}?stackoverflow.com",
+
+    "{*.}?skyscanner.co.in",
+    "{*.}?tripadvisor.com",
+    "{*.}?booking.com",
+    "{*.}?bookmyshow.com",
+    "{*.}?makemytrip.com",
+
+    "{*.}?kickassanime.ro",
+    "{*.}?kickassanime.su",
+    "{*.}?animixplay.to",
+
+    "{*.}?medium.com",
+    "{*.}?duolingo.com",
+    "{*.}?quora.com",
+    "{*.}?wikipedia.org",
+    "{*.}?wsj.com",
+
+    "{*.}?ctftime.org",
+    "{*.}?hackerone.com",
+    "{*.}?cryptohack.org",
+    "{*.}?websec.fr",
+    "{*.}?portswigger.net",
+
+    "{*.}?brainly.in",
+    "{*.}?chegg.com",
+
+    "{*.}?dynalist.io",
+    "{*.}?notion.so",
+
+    "{*.}?channeli.in",
+    "{*.}?iitr.ac.in",
+    "{*.}?josaa.nic.in",
+
+    "{*.}?zerodha.com",
+    "{*.}?tradingview.com",
+    "{*.}?nseindia.com",
+
+    "{*.}?upgrad.com",
+    "{*.}?byjus.com",
+    "{*.}?coursera.com",
+    "{*.}?udemy.com",
+    "{*.}?swayam.gov.in",
+    "{*.}?unacademy.com",
+    "{*.}?visionias.in",
+    "{*.}?doubtnut.com",
+
+    "{*.}?collegedunia.com",
+    "{*.}?thehindu.com",
+    "{*.}?timesofindia.com",
+    "{*.}?indiatimes.com",
+
+    "{*.}?youtube.com",
+    "{*.}?twitch.tv",
+    "{*.}?netflix.com",
+    "{*.}?primevideo.com",
+
+    "{*.}?figma.com",
+    "{*.}?clickup.com",
+    "{*.}?dribbble.com",
+    "{*.}?behance.net",
+    "{*.}?pexels.com",
+    "{*.}?freepik.com",
+
+    "{*.}?amazon.in",
+    "{*.}?flipkart.com",
+    "{*.}?myntra.com",
+    "{*.}?shopify.in",
+
+    "{*.}?skribbl.io",
+    "{*.}?sketchful.io",
+    "{*.}?krunker.io",
+    "{*.}?chess24.com",
+
+    "{*.}?cricbuzz.com",
+    "{*.}?sofascore.com",
+    "{*.}?espncricinfo.com"
+  ],
+  "sharemsg_txt": {
+    "twitter": {
+      "url": "https://strello.co",
+      "title": "Strello"
+    },
+    "linkedin": {
+      "url": "https://strello.co",
+      "title": "Strello",
+      "summary": "insert linkedin summary here"
+    },
+    "whatsapp": {
+      "url": "https://strello.co",
+      "title": "Strello"
+    },
+    "facebook": {
+      "url": "https://strello.co",
+      "quote": "gbffvdbg",
+      "hashtag": "#strello"
     }
+  }
 }

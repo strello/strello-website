@@ -52,6 +52,7 @@
     "{*.}?ctftime.org",
     "{*.}?hackerone.com",
     "{*.}?cryptohack.org",
+    "{*.}?flutter.dev",
     "{*.}?websec.fr",
     "{*.}?portswigger.net",
 
@@ -104,6 +105,8 @@
     "{*.}?sketchful.io",
     "{*.}?krunker.io",
     "{*.}?chess24.com",
+    "{*.}?chess.com",
+    "{*.}?lichess.org",
 
     "{*.}?cricbuzz.com",
     "{*.}?sofascore.com",

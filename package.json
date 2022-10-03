@@ -23,7 +23,7 @@
     "styled-components": "^5.3.3",
     "typescript": "^4.5.5"
   },
-  "homepage": "https://strello.co",
+  "homepage": "https://strello.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "build": "CI=false react-scripts build",

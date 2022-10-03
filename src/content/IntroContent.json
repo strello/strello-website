@@ -3,7 +3,8 @@
   "text": "Connect with anyone who is on the same web-address as you in real-time. Chat through voice or text and interact with people from across the globe!",
   "button": [
     {
-      "title": "Explore"
+      "title": "Download beta",
+      "link": "https://chrome.google.com/webstore/detail/strello/ggjmiijopmjlbemfabahagjmbepmdjpb/"
     },
     {
       "title": "Learn more",

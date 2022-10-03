@@ -41,7 +41,13 @@ const RightBlock = ({
                         key={id}
                         color={item.color}
                         fixedWidth={true}
-                        onClick={() => scrollTo("about")}
+                        onClick={() => {
+                            if(item.link) {
+                                window.open(item.link);
+                            } else {
+                                scrollTo("about")
+                            }
+                        }}
                       >
                         {t(item.title)}
                       </Button>

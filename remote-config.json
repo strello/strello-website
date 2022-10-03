@@ -53,7 +53,7 @@
     "{*.}?ctftime.org",
     "{*.}?hackerone.com",
     "{*.}?cryptohack.org",
-    "{*.}?flutter.dev",w
+    "{*.}?flutter.dev",
     "{*.}?websec.fr",
     "{*.}?portswigger.net",
 
@@ -131,7 +131,7 @@
     "facebook": {
       "url": "https://chrome.google.com/webstore/detail/strello/ggjmiijopmjlbemfabahagjmbepmdjpb/",
       "quote": "Hey! I'm using Strello. Join me here",
-      "hashtag": "#strello"
+      "hashtag": "#strello" 
     }
   }
 }

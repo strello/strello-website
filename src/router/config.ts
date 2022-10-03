@@ -15,7 +15,8 @@ const externalRedirects = [
         path: "/feedback",
         link: "https://forms.gle/9ByyzhxNUpXSji3eA"
     }
-]
+];
+
 export {
     routes,
     externalRedirects

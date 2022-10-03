@@ -27,13 +27,12 @@ const Router = () => {
                             path={extRoute.path}
                             exact={true}
                             component={() => {
-                                window.location.href = extRoute.link;
+                                window.location.replace(extRoute.link);
                                 return null;
                             }}
                         />
                     )
-                })
-                }
+                })}
             </Switch>
             <Footer />
         </Suspense>

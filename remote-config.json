@@ -53,7 +53,7 @@
     "{*.}?ctftime.org",
     "{*.}?hackerone.com",
     "{*.}?cryptohack.org",
-    "{*.}?flutter.dev",
+    "{*.}?flutter.dev",w
     "{*.}?websec.fr",
     "{*.}?portswigger.net",
 
@@ -116,21 +116,21 @@
   ],
   "sharemsg_txt": {
     "twitter": {
-      "url": "https://strello.co",
-      "title": "Strello"
+      "url": "https://chrome.google.com/webstore/detail/strello/ggjmiijopmjlbemfabahagjmbepmdjpb/",
+      "title": "Bawaal cheez hai ye to"
     },
     "linkedin": {
-      "url": "https://strello.co",
+      "url": "https://chrome.google.com/webstore/detail/strello/ggjmiijopmjlbemfabahagjmbepmdjpb/",
       "title": "Strello",
-      "summary": "insert linkedin summary here"
+      "summary": "Hey connections! I found this cool extension called Strello! Do try it out and let me know what do you think about the idea!"
     },
     "whatsapp": {
-      "url": "https://strello.co",
-      "title": "Strello"
+      "url": "https://chrome.google.com/webstore/detail/strello/ggjmiijopmjlbemfabahagjmbepmdjpb/",
+      "title": "Hey! I'm using Strello. Join me here"
     },
     "facebook": {
-      "url": "https://strello.co",
-      "quote": "gbffvdbg",
+      "url": "https://chrome.google.com/webstore/detail/strello/ggjmiijopmjlbemfabahagjmbepmdjpb/",
+      "quote": "Hey! I'm using Strello. Join me here",
       "hashtag": "#strello"
     }
   }

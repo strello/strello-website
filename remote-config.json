@@ -18,6 +18,7 @@
     "{*.}?javatpoint.com",
     "{*.}?leetcode.com",
     "{*.}?geeksforgeeks.org",
+    "{*.}?joinsuperset.com",
 
     "{*.}?colab.research.google.com",
     "{*.}?arxiv.org",
